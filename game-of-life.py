@@ -1,13 +1,13 @@
-#!/usr/bin/python2
-# vim: set fileencoding=utf8 :
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 
-##################################
-#                                #
-#         Rundgang 2016          #
-#     Conway's Game of Life      #
-#                                #
-##################################
+###############################################################
+#                                                             #
+#                        Rundgang 2016                        #
+#                    Conway's Game of Life                    #
+#                                                             #
+###############################################################
 
 import os
 import random
@@ -106,7 +106,9 @@ while True:
     generate_grid(COLS, ROWS, next)
 
     # play game of life until:
-    # grid empty, terminal size change or generations reached
+    #   * grid empty
+    #   * terminal size change
+    #   * defined number of generations reached
     for _ in range(GENERATIONS):
         term_size = os.popen('stty size', 'r').read().split()
         if [ROWS_str, COLS_str] != term_size:
