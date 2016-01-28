@@ -24,7 +24,7 @@ import time
 GENERATIONS = 3000
 
 # symbol to be used (utf8 encoding)
-SYM="▇"
+SYM = "▇"
 
 # delay between generations
 DELAY = 0.05
