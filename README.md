@@ -2,7 +2,7 @@
 
 ## projects
 
-* game-of-life.py
+* markus_6.1.py
 
 
 ## license
